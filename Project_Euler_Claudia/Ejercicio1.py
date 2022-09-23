@@ -1,3 +1,6 @@
+"""Ejercicio que suma los multiplos de 3 o de 5 hasta el 1000
+   Este ejercicio puede ser modificado para cualquer multiplos 
+   cualquier"""
 def is_multiplo(num, multiplo):
     esMultiplo=False
     if(num%multiplo==0):
