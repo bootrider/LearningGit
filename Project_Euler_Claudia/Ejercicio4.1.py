@@ -1,4 +1,3 @@
-
 def invertir_numero(num):
     return int((str(num)[::-1]))
 
@@ -7,16 +6,22 @@ def revisar_palidromo(num):
         return True
     return False
     
-def determinar_palindromo():
-    pal_mayor=0
-    for i in range (1000):
-        for j in range (1000):
-            num=i*j
-            if(revisar_palidromo(num)):
-                if(pal_mayor<num):
-                    pal_mayor=num
-    return pal_mayor
-             
+def determinar_mult_11():
+    i=999
+    while(i%11!=0 and i>99):
+        i-=1
+    return i
+
+def hallar_num_pal(primer_digito):
+    i=999
+    while(True):
+        num= primer_digito*i
+        print(num)
+        if(revisar_palidromo(num)):
+            return num
+        i-=1
+
 def main():
-    print(determinar_palindromo())
+    primer_digito= determinar_mult_11()
+    print(hallar_num_pal(primer_digito))
 main()
