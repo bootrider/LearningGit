@@ -7,13 +7,13 @@ class Fibonnacci
         while(i < 4000000)
         {
             suma = i + j;
-            i = j
-            j = suma
-            Console.WriteLine(suma)
+            i = j;
+            j = suma;
+            Console.WriteLine(suma);
             if(suma % 2 == 0)
             {
-                Console.WriteLine("suma es par"+suma)
-                suma_fibo_par += suma
+                Console.WriteLine("suma es par"+suma);
+                suma_fibo_par += suma;
             }
         }
         Console.WriteLine("fibo suma= ", suma_fibo_par);
