@@ -8,7 +8,7 @@ using System.Diagnostics;
 public class UnitTest1
 {
     [TestMethod]
-    public void Run_NumbersBellow10_ResultIs23()
+    public void Run_NumbersBellow10_ResultIs23() 
     {
         // Arrange
         var exercise = new Excercise();
