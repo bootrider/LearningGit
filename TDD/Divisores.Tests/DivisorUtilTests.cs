@@ -13,7 +13,7 @@ namespace Divisores.Tests
             var result = util.IsDividedBy(4, 2);
 
             // Assert
-            Assert.IsTrue(result);
+            Assert.IsTrue(result, null);
         }
 
         [TestMethod]
